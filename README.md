@@ -4,7 +4,7 @@ This repository comprises a data science project, the **"K-Means Clustering Algo
 
 ---
 
-## 📈 Project Overview and Methodology
+## Project Overview and Methodology
 
 The primary purpose of this project is to develop a reliable customer segmentation model through unsupervised learning. The solution was developed and tested with a "secondary" Kaggle dataset that contains 5,000 synthetic customer records, as transactional data from actual business systems are usually private and can’t be accessed. Each record contains general customer features, but this implementation specifically uses Annual Income (in Philippine Peso) and a store-assigned Spending Score (1-100) to map different behavioral patterns.
 
@@ -23,30 +23,30 @@ $$z = \frac{x - \mu}{\sigma}$$
 
 ---
 
-## 📊 Visualizations & Analyses
+## Visualizations & Analyses
 
-### 1. Feature Distribution & Data Overview
+### 1. Customer Segmentation — K Selection & Evaluation Metrics
 Detailed inspection of customer metrics to establish baseline data distributions and look for initial patterns or skewness across attributes.
 
 <img width="1536" height="754" alt="Feature Distribution" src="Figure_1.png" />
 
 ---
 
-### 2. Dimensionality Reduction & Cluster Evaluation
+### 2. Customer Cluster Map & Distribution
 Applying techniques like PCA or t-SNE alongside optimization metrics (such as the Elbow Method or Silhouette analysis) to determine the ideal cluster structure.
 
 <img width="1536" height="754" alt="Cluster Evaluation" src="Figure_2.png" />
 
 ---
 
-### 3. Customer Segment Profiling
+### 3. Cluster Distribution Analysis & Centroid Profiles
 A deep dive into the resulting customer personas, mapping clusters against core behavioral dimensions to interpret distinct market demographics.
 
 <img width="1536" height="754" alt="Customer Segment Profiling" src="Figure_3.png" />
 
 ---
 
-## 🧪 Evaluation and Segmentation Results
+## Evaluation and Segmentation Results
 
 The evaluation metrics of the model show that there is an extremely robust, statistically accurate cluster structure. This model achieved a Silhouette score above 0.50 showing a sound structure, and customers are significantly more similar within a cluster than they are to those within any other cluster. A Davies-Bouldin score of below 1.00 shows fantastic separation, and a Calinski-Harabasz score of > 200 shows a very tight and compact cluster structure. 
 
@@ -59,7 +59,7 @@ With an almost perfect split across the 5,000 records, and just under 20% (~1000
 | **Calinski-Harabasz Index** | High Score (> 200) | Highly defined, well-compacted data density. |
 | **Within-Cluster Sum of Squares** | Low Inertia | Optimal fit achieved with significant drop from K=1. |
 
-### 👥 Cluster Profiles
+### Cluster Profiles
 
 * **Cluster 0: High Income, High Spenders (The Premium Target)** Demonstrate high potential in terms of both purchasing power and buying intent, as they account for the highest profit margins. Businesses should view them as key prospects for VIP loyalty programs, exclusive product categories, and specialized white-glove member benefits. Given their proven purchase history and highly interactive behavior, this group is a prime candidate for well-executed cross-sell and up-sell strategies.
   
@@ -73,14 +73,14 @@ With an almost perfect split across the 5,000 records, and just under 20% (~1000
 
 ---
 
-## 🏁 Key Technical Conclusions
+## Key Technical Conclusions
 
 1. **Automatic Personalization:** The K-Means algorithm provides a highly efficient, highly scalable and highly explainable method of turning potentially thousands of non-conceptual, raw data into a tangible business persona.
 2. **Algorithm Stability:** The mathematical partnership between Z-Score Standardization and a K-Means++ initialization guarantees a stable, reproducible and entirely unskewed clustering model irrespective of the absolute base scale.
 
 ---
 
-## 🛠️ Project Technology Stack
+## Project Technology Stack
 
 * **Language:** Python 3.10+
 * **Processing:** `pandas`, `NumPy`
