@@ -46,13 +46,6 @@ A deep dive into the resulting customer personas, mapping clusters against core 
 
 ---
 
-### 4. Project Pipeline & Dashboard Interface
-A complete look at the final output pipeline, demonstrating how the customer segments are presented, sorted, or deployed in application scripts.
-
-<img width="1536" height="754" alt="Project Dashboard Pipeline" src="Figure_4.png" />
-
----
-
 ## 🧪 Evaluation and Segmentation Results
 
 The evaluation metrics of the model show that there is an extremely robust, statistically accurate cluster structure. This model achieved a Silhouette score above 0.50 showing a sound structure, and customers are significantly more similar within a cluster than they are to those within any other cluster. A Davies-Bouldin score of below 1.00 shows fantastic separation, and a Calinski-Harabasz score of > 200 shows a very tight and compact cluster structure. 
